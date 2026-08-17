@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocher Vision</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#07111f;color:#f8fafc}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;border-bottom:1px solid #1e293b;background:#07111fee;position:sticky;top:0}
+.logo{font-size:23px;font-weight:800}.logo span{color:#38bdf8}
+nav a{color:#cbd5e1;text-decoration:none;margin-left:20px;font-size:14px}
+.hero{min-height:72vh;display:flex;align-items:center;text-align:center;justify-content:center;padding:60px 20px;background:radial-gradient(circle at 50% 10%,#164e63 0,#0b1b2e 35%,#07111f 72%)}
+.hero div{max-width:800px}.tag{color:#38bdf8;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(42px,8vw,78px);margin:15px 0}.hero p{font-size:20px;color:#b8c5d6;line-height:1.6}
+.btn{display:inline-block;margin-top:18px;padding:14px 24px;border-radius:12px;background:#38bdf8;color:#03101b;text-decoration:none;font-weight:800}
+section{max-width:1050px;margin:auto;padding:55px 20px}h2{font-size:32px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.card{background:#0e1a2b;border:1px solid #223149;border-radius:18px;padding:25px}.icon{font-size:34px}.card h3{margin:12px 0 8px}.card p{color:#9fb0c5;line-height:1.55}
+.quote{text-align:center;background:#0b1727;border-radius:22px;padding:38px;font-size:25px;font-weight:700}
+footer{text-align:center;padding:30px;color:#718096;border-top:1px solid #1e293b}
+@media(max-width:650px){nav{display:none}.hero{min-height:78vh}.hero p{font-size:17px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">ROCHER <span>VISION</span></div>
+  <nav><a href="#vision">Vision</a><a href="#domaines">Domaines</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<section class="hero">
+<div>
+  <div class="tag">Imagine • Crée • Évolue</div>
+  <h1>Construisons le futur.</h1>
+  <p>Rocher Vision explore la technologie, l'intelligence artificielle, la création numérique et les opportunités du monde digital.</p>
+  <a class="btn" href="#domaines">Découvrir Rocher Vision</a>
+</div>
+</section>
+
+<section id="vision">
+<h2>Notre vision</h2>
+<div class="quote">« Apprendre aujourd'hui pour créer les opportunités de demain. »</div>
+</section>
+
+<section id="domaines">
+<h2>Ce que nous allons construire</h2>
+<div class="grid">
+<div class="card"><div class="icon">🤖</div><h3>Intelligence artificielle</h3><p>Découvrir les outils IA et apprendre à les utiliser intelligemment.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Technologie</h3><p>Applications, smartphones, astuces et nouveautés utiles.</p></div>
+<div class="card"><div class="icon">🎥</div><h3>Création numérique</h3><p>Créer des vidéos, des visuels et du contenu pour Internet.</p></div>
+<div class="card"><div class="icon">💡</div><h3>Entrepreneuriat</h3><p>Transformer des idées en projets concrets et apprendre à développer une activité.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Rejoindre l'aventure</h2>
+<div class="card"><p>Rocher Vision commence petit, mais l'objectif est grand : apprendre, créer et construire une vraie marque numérique.</p></div>
+</section>
+</main>
+<footer>© 2026 Rocher Vision — Imagine. Crée. Évolue.</footer>
+</body>
+</html>
