@@ -3,274 +3,252 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Rocher Vision | IA, Technologie & Création</title>
 
 <style>
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
-html{
-    scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#07111f;
-    color:#f8fafc;
-    line-height:1.6;
+font-family:Arial,Helvetica,sans-serif;
+background:#07111f;
+color:#f8fafc;
+line-height:1.6;
 }
 
 header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 7%;
-    background:rgba(7,17,31,.95);
-    border-bottom:1px solid #1e293b;
-    backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 7%;
+background:rgba(7,17,31,.96);
+border-bottom:1px solid #1e293b;
 }
 
 .logo{
-    font-size:23px;
-    font-weight:800;
-    color:#ffffff;
+font-size:23px;
+font-weight:800;
 }
 
-.logo span{
-    color:#38bdf8;
-}
+.logo span{color:#38bdf8}
 
-nav{
-    display:flex;
-    gap:22px;
-}
+nav{display:flex;gap:20px}
 
 nav a{
-    color:#cbd5e1;
-    text-decoration:none;
-    font-weight:600;
+color:#cbd5e1;
+text-decoration:none;
+font-weight:600;
 }
 
-nav a:hover{
-    color:#38bdf8;
-}
+nav a:hover{color:#38bdf8}
 
 .hero{
-    min-height:82vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:60px 7%;
-    background:
-        radial-gradient(circle at top,#12345a 0,#07111f 55%);
+min-height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:60px 7%;
+background:radial-gradient(circle at top,#12345a 0,#07111f 60%);
 }
 
-.hero-content{
-    max-width:850px;
-}
+.hero-content{max-width:850px}
 
 .tag{
-    color:#38bdf8;
-    font-weight:700;
-    letter-spacing:2px;
-    margin-bottom:15px;
+color:#38bdf8;
+font-weight:700;
+letter-spacing:2px;
+margin-bottom:15px;
 }
 
 h1{
-    font-size:clamp(42px,9vw,78px);
-    line-height:1.05;
-    margin-bottom:20px;
+font-size:clamp(42px,9vw,78px);
+line-height:1.05;
+margin-bottom:20px;
 }
 
 .hero p{
-    font-size:20px;
-    color:#cbd5e1;
-    max-width:720px;
-    margin:auto;
+font-size:20px;
+color:#cbd5e1;
+max-width:720px;
+margin:auto;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:25px;
-    padding:14px 24px;
-    border-radius:12px;
-    background:#38bdf8;
-    color:#03111f;
-    text-decoration:none;
-    font-weight:800;
+display:inline-block;
+margin-top:22px;
+padding:14px 24px;
+border:0;
+border-radius:12px;
+background:#38bdf8;
+color:#03111f;
+font-weight:800;
+cursor:pointer;
+text-decoration:none;
 }
 
-.btn:hover{
-    transform:translateY(-2px);
-}
+.btn:hover{transform:translateY(-2px)}
 
 section{
-    max-width:1100px;
-    margin:auto;
-    padding:80px 7%;
+max-width:1100px;
+margin:auto;
+padding:75px 7%;
 }
 
 .section-title{
-    text-align:center;
-    margin-bottom:45px;
+text-align:center;
+margin-bottom:40px;
 }
 
 .section-title h2{
-    font-size:38px;
-    margin-bottom:10px;
+font-size:38px;
+margin-bottom:10px;
 }
 
-.section-title p{
-    color:#94a3b8;
-}
+.section-title p{color:#94a3b8}
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .card{
-    background:#0e1a2b;
-    border:1px solid #1e334d;
-    border-radius:18px;
-    padding:25px;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    border-color:#38bdf8;
+background:#0e1a2b;
+border:1px solid #1e334d;
+border-radius:18px;
+padding:25px;
 }
 
 .icon{
-    font-size:38px;
-    margin-bottom:12px;
+font-size:38px;
+margin-bottom:10px;
 }
 
-.card h3{
-    margin-bottom:10px;
-}
+.card h3{margin-bottom:10px}
 
-.card p{
-    color:#aebdce;
-}
+.card p{color:#aebdce}
 
 .ai-section{
-    background:#091729;
-    max-width:none;
+max-width:none;
+background:#091729;
 }
 
 .ai-inner{
-    max-width:1100px;
-    margin:auto;
+max-width:1100px;
+margin:auto;
 }
 
-.ai-intro{
-    text-align:center;
-    max-width:750px;
-    margin:0 auto 40px;
+/* GENERATEUR */
+
+.generator{
+margin-top:45px;
+padding:30px;
+background:#0d1b2e;
+border:1px solid #1d3a55;
+border-radius:20px;
 }
 
-.ai-intro p{
-    color:#b8c5d6;
+.generator h3{
+font-size:28px;
+color:#38bdf8;
+margin-bottom:10px;
 }
 
-.tool{
-    background:#0d1b2e;
-    border:1px solid #1d3a55;
-    border-radius:18px;
-    padding:25px;
+.generator-description{
+color:#aebdce;
+margin-bottom:25px;
 }
 
-.tool h3{
-    color:#38bdf8;
-    margin-bottom:10px;
+label{
+display:block;
+font-weight:700;
+margin:15px 0 8px;
 }
 
-.tool ul{
-    list-style:none;
+input,select,textarea{
+width:100%;
+padding:14px;
+border-radius:10px;
+border:1px solid #334155;
+background:#07111f;
+color:#fff;
+font-size:16px;
+font-family:inherit;
 }
 
-.tool li{
-    padding:8px 0;
-    border-bottom:1px solid #1b2b3d;
-    color:#cbd5e1;
+textarea{
+min-height:120px;
+resize:vertical;
 }
 
-.tool li:last-child{
-    border-bottom:none;
+.result{
+display:none;
+margin-top:25px;
+padding:25px;
+background:#07111f;
+border:1px solid #29445e;
+border-radius:15px;
+}
+
+.result h4{
+color:#38bdf8;
+font-size:22px;
+margin-bottom:10px;
+}
+
+.result p{
+color:#d4deea;
+margin-bottom:18px;
 }
 
 .quote{
-    margin-top:60px;
-    text-align:center;
-    padding:35px 20px;
-    border-radius:18px;
-    background:#0b1626;
-    border:1px solid #1e334d;
+margin-top:50px;
+text-align:center;
+padding:35px 20px;
+border-radius:18px;
+background:#0b1626;
+border:1px solid #1e334d;
 }
 
 .quote p{
-    font-size:22px;
-    font-weight:600;
+font-size:22px;
+font-weight:600;
 }
 
 .cta{
-    text-align:center;
-    background:linear-gradient(135deg,#0c223b,#07111f);
-    border-radius:24px;
-    padding:60px 25px;
-    border:1px solid #1e3a55;
+text-align:center;
+background:linear-gradient(135deg,#0c223b,#07111f);
+border-radius:24px;
+padding:55px 25px;
+border:1px solid #1e3a55;
 }
 
 .cta p{
-    color:#b7c4d4;
-    max-width:650px;
-    margin:12px auto;
+color:#b7c4d4;
+max-width:650px;
+margin:12px auto;
 }
 
 footer{
-    text-align:center;
-    padding:35px 20px;
-    color:#7f91a6;
-    border-top:1px solid #1e293b;
+text-align:center;
+padding:35px 20px;
+color:#7f91a6;
+border-top:1px solid #1e293b;
 }
 
 @media(max-width:700px){
-
-    header{
-        padding:15px 5%;
-    }
-
-    nav{
-        display:none;
-    }
-
-    section{
-        padding:65px 5%;
-    }
-
-    .hero{
-        min-height:75vh;
-        padding:50px 5%;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .section-title h2{
-        font-size:30px;
-    }
+header{padding:15px 5%}
+nav{display:none}
+section{padding:60px 5%}
+.hero{min-height:75vh;padding:50px 5%}
+.hero p{font-size:17px}
+.section-title h2{font-size:30px}
+.generator{padding:22px}
 }
 </style>
 </head>
@@ -278,264 +256,480 @@ footer{
 <body>
 
 <header>
-    <div class="logo">ROCHER <span>VISION</span></div>
 
-    <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#ia">IA</a>
-        <a href="#technologie">Technologie</a>
-        <a href="#creation">Création</a>
-        <a href="#entrepreneuriat">Business</a>
-    </nav>
+<div class="logo">
+ROCHER <span>VISION</span>
+</div>
+
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#ia">IA</a>
+<a href="#outil">Outil</a>
+<a href="#technologie">Technologie</a>
+<a href="#creation">Création</a>
+</nav>
+
 </header>
 
 <main>
 
 <section class="hero" id="accueil">
-    <div class="hero-content">
 
-        <div class="tag">IMAGINE • CRÉE • ÉVOLUE</div>
+<div class="hero-content">
 
-        <h1>Construisons le futur.</h1>
+<div class="tag">
+IMAGINE • CRÉE • ÉVOLUE
+</div>
 
-        <p>
-            Rocher Vision explore l'intelligence artificielle,
-            la technologie, la création numérique et les opportunités
-            du monde digital.
-        </p>
+<h1>
+Construisons le futur.
+</h1>
 
-        <a class="btn" href="#ia">Découvrir l'IA 🤖</a>
+<p>
+Rocher Vision explore l'intelligence artificielle,
+la technologie, la création numérique et les
+opportunités du monde digital.
+</p>
 
-    </div>
+<a class="btn" href="#outil">
+Essayer notre outil 🤖
+</a>
+
+</div>
+
 </section>
+
 
 <section>
-    <div class="section-title">
-        <h2>Notre vision</h2>
-        <p>Apprendre aujourd'hui pour créer les opportunités de demain.</p>
-    </div>
 
-    <div class="quote">
-        <p>
-            « Apprendre aujourd'hui pour créer les opportunités de demain. »
-        </p>
-    </div>
+<div class="section-title">
+
+<h2>Notre vision</h2>
+
+<p>
+Apprendre aujourd'hui pour créer les opportunités de demain.
+</p>
+
+</div>
+
+<div class="quote">
+
+<p>
+« Apprendre aujourd'hui pour créer les opportunités de demain. »
+</p>
+
+</div>
+
 </section>
+
 
 <section class="ai-section" id="ia">
-    <div class="ai-inner">
 
-        <div class="section-title">
-            <h2>🤖 Intelligence artificielle</h2>
-            <p>Comprendre l'IA et apprendre à l'utiliser intelligemment.</p>
-        </div>
+<div class="ai-inner">
 
-        <div class="ai-intro">
-            <p>
-                L'intelligence artificielle transforme déjà notre manière
-                d'apprendre, de travailler, de créer et de développer des projets.
-                Rocher Vision veut rendre ces technologies plus simples et
-                accessibles.
-            </p>
-        </div>
+<div class="section-title">
 
-        <div class="cards">
+<h2>🤖 Intelligence artificielle</h2>
 
-            <div class="card">
-                <div class="icon">💬</div>
-                <h3>Assistants IA</h3>
-                <p>
-                    Découvrir comment utiliser les assistants intelligents
-                    pour apprendre, réfléchir et gagner du temps.
-                </p>
-            </div>
+<p>
+Comprendre l'IA et apprendre à l'utiliser intelligemment.
+</p>
 
-            <div class="card">
-                <div class="icon">🎨</div>
-                <h3>Images & design</h3>
-                <p>
-                    Explorer les outils permettant de créer des images,
-                    des visuels et des concepts numériques avec l'IA.
-                </p>
-            </div>
+</div>
 
-            <div class="card">
-                <div class="icon">🎬</div>
-                <h3>Création vidéo</h3>
-                <p>
-                    Découvrir comment l'IA peut aider à imaginer,
-                    préparer et améliorer des vidéos.
-                </p>
-            </div>
+<div class="cards">
 
-            <div class="card">
-                <div class="icon">💻</div>
-                <h3>Programmation</h3>
-                <p>
-                    Utiliser l'IA comme assistant pour apprendre le code
-                    et construire des projets numériques.
-                </p>
-            </div>
+<div class="card">
 
-        </div>
+<div class="icon">💬</div>
 
-        <div class="tool" style="margin-top:25px;">
-            <h3>💡 5 façons d'utiliser l'IA aujourd'hui</h3>
+<h3>Assistants IA</h3>
 
-            <ul>
-                <li>1. Apprendre plus rapidement un nouveau sujet.</li>
-                <li>2. Générer des idées pour un projet.</li>
-                <li>3. Améliorer un texte ou une présentation.</li>
-                <li>4. Créer du contenu numérique.</li>
-                <li>5. Développer et tester des idées de business.</li>
-            </ul>
-        </div>
+<p>
+Utiliser l'intelligence artificielle pour apprendre,
+réfléchir et gagner du temps.
+</p>
 
-    </div>
+</div>
+
+<div class="card">
+
+<div class="icon">🎨</div>
+
+<h3>Images & design</h3>
+
+<p>
+Découvrir comment créer des visuels et des concepts
+numériques avec l'IA.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🎬</div>
+
+<h3>Création vidéo</h3>
+
+<p>
+Découvrir comment l'IA peut aider à créer des vidéos
+et développer des idées.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">💻</div>
+
+<h3>Programmation</h3>
+
+<p>
+Utiliser l'IA comme assistant pour apprendre le code
+et construire des projets.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- OUTIL INTERACTIF -->
+
+<section id="outil">
+
+<div class="section-title">
+
+<h2>🚀 Générateur de contenu</h2>
+
+<p>
+Transforme une simple idée en concept de contenu.
+</p>
+
+</div>
+
+<div class="generator">
+
+<h3>💡 Crée ton idée</h3>
+
+<p class="generator-description">
+Entre ton idée, choisis une plateforme et laisse
+Rocher Vision préparer un concept pour toi.
+</p>
+
+<label for="idee">
+Ton idée
+</label>
+
+<textarea
+id="idee"
+placeholder="Exemple : apprendre l'intelligence artificielle..."
+></textarea>
+
+<label for="plateforme">
+Type de contenu
+</label>
+
+<select id="plateforme">
+
+<option value="TikTok">
+🎵 TikTok
+</option>
+
+<option value="YouTube">
+🎬 YouTube
+</option>
+
+<option value="Facebook">
+📱 Facebook
+</option>
+
+<option value="Article">
+📝 Article
+</option>
+
+</select>
+
+<button
+class="btn"
+onclick="genererContenu()"
+>
+✨ Générer mon contenu
+</button>
+
+<div
+id="resultat"
+class="result"
+>
+
+<h4 id="titreResultat"></h4>
+
+<p id="ideeResultat"></p>
+
+<h4>🎯 Conseils</h4>
+
+<p id="conseilResultat"></p>
+
+</div>
+
+</div>
+
+</section>
+
 
 <section id="technologie">
 
-    <div class="section-title">
-        <h2>📱 Technologie</h2>
-        <p>Des informations simples et utiles sur le monde numérique.</p>
-    </div>
+<div class="section-title">
 
-    <div class="cards">
+<h2>📱 Technologie</h2>
 
-        <div class="card">
-            <div class="icon">📱</div>
-            <h3>Smartphones</h3>
-            <p>
-                Astuces, fonctionnalités et conseils pour mieux utiliser
-                son téléphone.
-            </p>
-        </div>
+<p>
+Des informations simples et utiles sur le monde numérique.
+</p>
 
-        <div class="card">
-            <div class="icon">🌐</div>
-            <h3>Internet</h3>
-            <p>
-                Comprendre les outils et les possibilités offertes
-                par Internet.
-            </p>
-        </div>
+</div>
 
-        <div class="card">
-            <div class="icon">🔐</div>
-            <h3>Sécurité</h3>
-            <p>
-                Découvrir les bonnes pratiques pour protéger ses comptes
-                et ses informations.
-            </p>
-        </div>
+<div class="cards">
 
-    </div>
+<div class="card">
+
+<div class="icon">📱</div>
+
+<h3>Smartphones</h3>
+
+<p>
+Astuces et fonctionnalités pour mieux utiliser
+son téléphone.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🌐</div>
+
+<h3>Internet</h3>
+
+<p>
+Comprendre les outils et les possibilités offertes
+par Internet.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🔐</div>
+
+<h3>Sécurité</h3>
+
+<p>
+Découvrir les bonnes pratiques pour protéger
+ses comptes.
+</p>
+
+</div>
+
+</div>
 
 </section>
+
 
 <section id="creation">
 
-    <div class="section-title">
-        <h2>🎥 Création numérique</h2>
-        <p>Transformer ses idées en contenu.</p>
-    </div>
+<div class="section-title">
 
-    <div class="cards">
+<h2>🎥 Création numérique</h2>
 
-        <div class="card">
-            <div class="icon">🎥</div>
-            <h3>Vidéo</h3>
-            <p>
-                Apprendre les bases pour créer des vidéos intéressantes
-                pour Internet.
-            </p>
-        </div>
+<p>
+Transformer ses idées en contenu.
+</p>
 
-        <div class="card">
-            <div class="icon">🖼️</div>
-            <h3>Visuels</h3>
-            <p>
-                Découvrir comment créer des images et des designs
-                pour présenter ses projets.
-            </p>
-        </div>
+</div>
 
-        <div class="card">
-            <div class="icon">📢</div>
-            <h3>Contenu</h3>
-            <p>
-                Trouver des idées pour publier régulièrement et
-                développer une audience.
-            </p>
-        </div>
+<div class="cards">
 
-    </div>
+<div class="card">
 
-</section>
+<div class="icon">🎥</div>
 
-<section id="entrepreneuriat">
+<h3>Vidéo</h3>
 
-    <div class="section-title">
-        <h2>💡 Entrepreneuriat</h2>
-        <p>Passer d'une idée à un projet concret.</p>
-    </div>
+<p>
+Créer des vidéos intéressantes pour Internet.
+</p>
 
-    <div class="cards">
+</div>
 
-        <div class="card">
-            <div class="icon">🚀</div>
-            <h3>Idées</h3>
-            <p>
-                Identifier des problèmes et imaginer des solutions
-                utiles pour les autres.
-            </p>
-        </div>
+<div class="card">
 
-        <div class="card">
-            <div class="icon">💰</div>
-            <h3>Opportunités</h3>
-            <p>
-                Explorer les possibilités offertes par Internet
-                et la création numérique.
-            </p>
-        </div>
+<div class="icon">🖼️</div>
 
-        <div class="card">
-            <div class="icon">📈</div>
-            <h3>Développement</h3>
-            <p>
-                Apprendre progressivement à transformer un petit projet
-                en activité durable.
-            </p>
-        </div>
+<h3>Visuels</h3>
 
-    </div>
+<p>
+Créer des images et des designs pour présenter
+ses projets.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">📢</div>
+
+<h3>Contenu</h3>
+
+<p>
+Trouver des idées pour publier et développer
+une audience.
+</p>
+
+</div>
+
+</div>
 
 </section>
+
 
 <section>
 
-    <div class="cta">
+<div class="cta">
 
-        <h2>🚀 Rejoindre l'aventure</h2>
+<h2>
+🚀 Rocher Vision
+</h2>
 
-        <p>
-            Rocher Vision commence petit, mais l'objectif est grand :
-            apprendre, créer et construire une vraie marque numérique.
-        </p>
+<p>
+Nous commençons petit, mais nous construisons
+pour le futur.
+</p>
 
-        <a class="btn" href="#accueil">Retour en haut ↑</a>
+<a class="btn" href="#accueil">
+Retour en haut ↑
+</a>
 
-    </div>
+</div>
 
 </section>
 
 </main>
 
+
 <footer>
-    <p>© 2026 Rocher Vision — Imagine • Crée • Évolue</p>
+
+<p>
+© 2026 Rocher Vision — Imagine • Crée • Évolue
+</p>
+
 </footer>
+
+
+<script>
+
+function genererContenu(){
+
+const idee =
+document.getElementById("idee").value.trim();
+
+const plateforme =
+document.getElementById("plateforme").value;
+
+const resultat =
+document.getElementById("resultat");
+
+const titre =
+document.getElementById("titreResultat");
+
+const ideeResultat =
+document.getElementById("ideeResultat");
+
+const conseil =
+document.getElementById("conseilResultat");
+
+
+if(idee === ""){
+
+alert("Écris d'abord ton idée. 💡");
+
+return;
+
+}
+
+
+titre.textContent =
+"🎯 Titre : " +
+idee.charAt(0).toUpperCase() +
+idee.slice(1) +
+" — le guide simple";
+
+
+if(plateforme === "TikTok"){
+
+ideeResultat.textContent =
+"Crée une courte vidéo TikTok sur « "
++ idee
++ " ». Commence par une question qui attire l'attention, présente 3 informations utiles et termine par une invitation à suivre Rocher Vision.";
+
+conseil.textContent =
+"Garde la vidéo courte, utilise des phrases simples et attire l'attention dès les premières secondes.";
+
+}
+
+
+else if(plateforme === "YouTube"){
+
+ideeResultat.textContent =
+"Crée une vidéo YouTube sur « "
++ idee
++ " ». Présente le problème, explique la solution étape par étape et termine avec un résumé.";
+
+conseil.textContent =
+"Prépare un titre clair et une miniature simple qui donne envie de regarder la vidéo.";
+
+}
+
+
+else if(plateforme === "Facebook"){
+
+ideeResultat.textContent =
+"Transforme « "
++ idee
++ " » en publication Facebook. Commence par une phrase forte, explique l'idée en quelques lignes et termine par une question pour encourager les commentaires.";
+
+conseil.textContent =
+"Utilise un texte facile à lire et pose une question à la fin pour créer des échanges.";
+
+}
+
+
+else{
+
+ideeResultat.textContent =
+"Transforme « "
++ idee
++ " » en article. Commence par une introduction, développe 3 parties principales et termine par une conclusion pratique.";
+
+conseil.textContent =
+"Utilise des sous-titres et des paragraphes courts pour faciliter la lecture.";
+
+}
+
+
+resultat.style.display = "block";
+
+resultat.scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+
+}
+
+</script>
 
 </body>
 </html>
